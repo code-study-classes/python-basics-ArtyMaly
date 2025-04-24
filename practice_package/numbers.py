@@ -1,8 +1,13 @@
-calculate_distance = lambda x, y: abs(x - y)
+def calculate_distance(x, y):
+    return abs(x - y)
 
-calculate_segments = lambda a, b: a // b
 
-calculate_digit_sum = lambda number: sum(int(digit) for digit in str(abs(number)))
+def calculate_segments(a, b):
+    return a // b
+
+
+def calculate_digit_sum(number):
+    return sum(int(digit) for digit in str(abs(number)))
 
 
 def calculate_rect_area(x1, y1, x2, y2):

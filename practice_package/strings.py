@@ -1,4 +1,5 @@
-extract_file_name = lambda path: path.replace('/', '').split('/')[-1].split('.')[0]
+def extract_file_name(path):
+    return path.replace('/', '').split('/')[-1].split('.')[0]
 
 
 def encrypt_text(data):

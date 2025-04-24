@@ -7,7 +7,9 @@ def normalize_names(names):
 
 
 def remove_invalid_emails(emails):
-    return [email for email in emails if email.count('@') == 1 and len(email) >= 5 and not email.startswith('@') and not email.endswith('@')]
+    return [email for email in emails 
+            if email.count('@') == 1 and 5 <= len(email) < 
+            email.startswith('@') < email.endswith('@')]
 
 
 def filter_palindromes(words):
